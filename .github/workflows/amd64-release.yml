@@ -4,7 +4,8 @@ on:
   workflow_dispatch:
     inputs:
       docker_images:
-        description: '请填写docker镜像名称,多个用英文逗号分开'
+        #description: '请填写docker镜像名称,多个用英文逗号分开'
+        description: 'kafka:2.8.0,zookeeper:3.8.2,minio:latest,elasticsearch:7.7.0,emqx:5.7.0,xxl-job-admin:2.4.1,edis:6.0.1,minio:RELEASE.2022-01-04T07-41-07Z,plumelog:3.5'
         required: true
         default: 'alpine:latest,alpine/curl,busybox:stable-glibc'
 
